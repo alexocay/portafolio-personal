@@ -22,6 +22,21 @@
     - Cursor personbalizado
     - Transición personalizada -->
 
+    <div class="circulos">
+        <svg class="circulo circulo1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path class="path" d="M24.3,-43.4C33.6,-36.7,44.8,-34.5,55.3,-28C65.8,-21.5,75.7,-10.8,77.7,1.2C79.7,13.1,73.8,26.1,63.2,32.4C52.5,38.7,37.1,38.2,25.8,47.1C14.5,56,7.3,74.3,-4.1,81.4C-15.5,88.5,-30.9,84.4,-45.1,77.2C-59.3,69.9,-72.3,59.6,-81.2,46.2C-90.1,32.8,-95,16.4,-90.8,2.4C-86.6,-11.6,-73.3,-23.1,-63.6,-35C-53.8,-47,-47.5,-59.2,-37.5,-65.6C-27.5,-71.9,-13.8,-72.3,-3.1,-66.8C7.5,-61.4,15,-50.1,24.3,-43.4Z" transform="translate(100 100)" />
+          </svg>
+          <svg class="circulo circulo2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path class="path" d="M29.1,-28C36.8,-13.4,41.7,-1.4,40.4,11.2C39.1,23.7,31.6,36.8,17,49.1C2.5,61.5,-19.1,73,-32.9,66.9C-46.7,60.8,-52.8,37.1,-52,18.3C-51.2,-0.6,-43.5,-14.5,-33.7,-29.6C-23.9,-44.6,-11.9,-60.7,-0.6,-60.2C10.7,-59.7,21.3,-42.6,29.1,-28Z" transform="translate(100 100)" />
+          </svg>
+          <svg class="circulo circulo3" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path class="path" d="M47.5,-43.3C56.2,-38.8,54.3,-19.4,52.5,-1.7C50.8,15.9,49.3,31.9,40.6,37C31.9,42,15.9,36.2,2.4,33.8C-11.2,31.5,-22.5,32.6,-34,27.5C-45.4,22.5,-57.1,11.2,-61.3,-4.1C-65.4,-19.5,-62,-39,-50.5,-43.6C-39,-48.1,-19.5,-37.6,-0.1,-37.6C19.4,-37.5,38.8,-47.9,47.5,-43.3Z" transform="translate(100 100)" />
+          </svg>
+          <svg class="circulo circulo4" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path class="path" d="M22.7,-26.2C29.6,-15.7,35.7,-7.9,41.4,5.7C47.1,19.3,52.6,38.7,45.6,51.4C38.7,64.2,19.3,70.3,6.3,64C-6.8,57.8,-13.6,39.1,-29.1,26.4C-44.5,13.6,-68.6,6.8,-74.6,-6.1C-80.7,-19,-68.8,-37.9,-53.4,-48.4C-37.9,-58.8,-19,-60.6,-5.6,-55.1C7.9,-49.5,15.7,-36.6,22.7,-26.2Z" transform="translate(100 100)" />
+          </svg>
+    </div>
+
     <header class="header">
         <h1 class="h1"><a href=#inicio" title="Alejandra O. Ayala" class="a">Alejandra O. Ayala</a></h1>
         <nav class="nav">
@@ -35,13 +50,7 @@
 
     <main class="main">
         <div class="seccion" id="inicio">
-            <div class="circulos">
-                <div class="circulo"></div>
-                <div class="circulo"></div>
-                <div class="circulo"></div>
-                <div class="circulo"></div>
-            </div>
-            <section>
+            <section class="seccion info">
                 <h2 class="h2">Alejandra O. Ayala</h2>
                 <h3 class="h3">Frontend Developer</h3>
 
@@ -56,14 +65,14 @@
             </section>
         </div>
 
-        <section class="seccion" id="works">
+        <section class="seccion works" id="works">
             <h2 class="h2">Trabajos</h2>
             <p class="p">Aquí te presento mis trabajos mientras estudiasba un curso de HTML, CSS, y JavaScript</p>
             <div class="grid">
                 <article class="article">
                     <a class="a" href="#" title="Trabajo1">
                         <figure class="figure">
-                            <img src="#" alt="Imagen" class="img" Imagen="" loading="lazy">
+                            <img src="assets/women.jpg" alt="Imagen" class="img" Imagen="" loading="lazy">
                         </figure>
                         <h4 class="h4">Nombre trabajo</h4>
                     </a>
@@ -71,7 +80,7 @@
                 <article class="article">
                     <a class="a" href="#" title="Trabajo1">
                         <figure class="figure">
-                            <img src="#" alt="Imagen" class="img" Imagen="" loading="lazy">
+                            <img src="assets/men.jpg" alt="Imagen" class="img" Imagen="" loading="lazy">
                         </figure>
                         <h4 class="h4">Nombre trabajo</h4>
                     </a>
@@ -80,7 +89,7 @@
         </section>
 
         <section class="seccion about" id="about">
-            <h2>Sobre mí</h2>
+            <h2 class="h2">Sobre mí</h2>
             <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, nemo illo sed quos ex
                 nostrum sequi iusto cumque tempora animi, aperiam aliquam ipsam, ut laudantium assumenda harum
                 laboriosam similique fuga.</p>
@@ -94,12 +103,16 @@
             <ul class="rrss">
                 <li class="li">
                     <a href="#" class="a" title="Nombre" target="_blank" rel="noopener noreferrer">
-                        <svg class="svg"></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                          </svg>
                     </a>
                 </li>
                 <li class="li">
                     <a href="#" class="a" title="Nombre" target="_blank" rel="noopener noreferrer">
-                        <svg class="svg"></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                          </svg>
                     </a>
                 </li>
             </ul>
@@ -112,3 +125,9 @@
 </body>
 
 </html>
+
+<!--<a href="https://www.freepik.com/free-photo/handsome-cheerful-young-sportsman-has-sporty-body-muscular-arms-wears-white-mock-up-t-shirt-has-short-dark-hair-toothy-appealing-smile-stands-purple-wall-blank-copy-space-aside_11579056.htm#query=model%20man&position=40&from_view=search&track=ais">Image by wayhomestudio</a> on Freepik-->
+<!--<a href="https://www.freepik.com/free-photo/dreamy-young-woman-sunglasses-looking-front_12859999.htm#query=model&position=3&from_view=search&track=sph">Image by lookstudio</a> on Freepik-->
+
+<!--<a href="https://www.freepik.com/free-photo/handsome-caucasian-man-s-portrait-isolated-purple-studio-background-neon-light-monochrome-beautiful-male-model-concept-human-emotions-facial-expression-sales-ad-fashion-beauty_14224289.htm?query=model?query=model&collectionId=2832&&position=6&from_view=collections">Image by master1305</a> on Freepik-->
+<!--Foto de Yuliya Kosolapova: https://www.pexels.com/es-es/foto/mujer-en-ropa-blanca-tocando-su-rostro-3270230/-->
