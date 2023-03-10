@@ -4,8 +4,10 @@
     --negro: #181818;
     --negro-5: rgba(0, 0, 0, 0.5);
     --negro-7: rgba(0, 0, 0, 0.7);
-    --tipo-titular: 'Playfair Display', serif;
-    --tipo-principal: 'Inter', sans-serif;
+    /*--tipo-titular: 'Playfair Display', serif;
+    --tipo-principal: 'Inter', sans-serif;*/
+    --tipo-titular: 'Spectral', serif;
+    --tipo-principal: 'Karla', sans-serif;
 }
 
 @media screen and (prefers-color-scheme:light){
