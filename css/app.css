@@ -5,9 +5,9 @@
     --negro-5: rgba(0, 0, 0, 0.6);
     --negro-7: rgba(0, 0, 0, 0.5);
     --tipo-titular: 'Playfair Display', serif;
-    /*--tipo-principal: 'Inter', sans-serif;*/
+    --tipo-principal: 'Inter', sans-serif;
     /*--tipo-titular: 'Spectral', serif;*/
-    --tipo-principal: 'Karla', sans-serif;
+    /*--tipo-principal: 'Karla', sans-serif;*/
 }
 
 @media screen and (prefers-color-scheme:light) {
@@ -173,12 +173,13 @@ h6 {
 
 .header {
     width: 100%;
-    min-height: 5em;
+    min-height: 15em;
     padding: 1em 2em;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    display: none;
     position: relative;
     z-index: 2;
     background: var(--negro-7);
@@ -277,7 +278,7 @@ h6 {
     gap: 1em;
 }
 
-/*.seccion .article {
+.seccion .article {
     width: 100%;
     min-height: 20vh;
     background: lightgoldenrodyellow;
@@ -289,9 +290,9 @@ h6 {
     position: relative;
     overflow: hidden;
     border-radius: 1em; 
-}*/
+}
 
-.seccion article {
+/*.seccion article {
     width: 100%;
     min-height: 20vh;
     background: lightgoldenrodyellow;
@@ -312,7 +313,7 @@ h6 {
     transform: translateX(0);
     transition-delay: 1s;
     opacity: 1;
-}
+}*/
 
 .seccion .h4 {
     width: 100%;
@@ -346,12 +347,12 @@ h6 {
     color: var(--blanco);
 }
 
-/*.works .h2{
+.works .h2{
     margin: 0 0 1rem;
     color: inherit;
-}*/
+}
 
-.works h2 {
+/*.works h2 {
     margin: 0 0 1rem;
     color: inherit;
     transition: 0.5s;
@@ -361,9 +362,9 @@ h6 {
 
 .works h2[data-scroll="in"] {
     transform: scaleX(1);
-}
+}*/
 
-.works h2:before {
+/*.works h2:before {
     transform-origin: right;
     transition: 0.5s;
 }
@@ -371,21 +372,19 @@ h6 {
 .works h2[data-scroll="in"]:before {
     transform: scaleX(0);
     transition-delay: 0.5s;
-}
+}*/
 
 .works p {
     max-width: 40rem;
     margin: 1rem 0 2rem;
     font-size: 1.1em;
     text-align: left;
-    transition: 1s;
-    opacity: 0;
 }
 
-.works p[data-scroll="in"] {
+/*.works p[data-scroll="in"] {
     opacity: 1;
     transition-delay: 1s;
-}
+}/*
 
 /*.about .h2 {
     margin: 0 0 2rem;
@@ -393,12 +392,9 @@ h6 {
 
 .about h2 {
     margin: 0 0 2rem;
-    transition: 0.5s;
-    transform-origin: left;
-    transform: scaleX(0);
 }
 
-.about h2[data-scroll="in"] {
+/*.about h2[data-scroll="in"] {
     transform: scaleX(1);
 }
 
@@ -410,7 +406,7 @@ h6 {
 .about h2[data-scroll="in"]:before {
     transform: scaleX(0);
     transition-delay: 0.5s;
-}
+}*/
 
 /*.about .p {
     max-width: 40rem;
@@ -421,17 +417,15 @@ h6 {
 
 .about p {
     max-width: 40rem;
-    margin: 1rem 0 1rem;
+    margin: 0 0 2rem;
     font-size: 1.1em;
     text-align: left;
-    transition: 1s;
-    opacity: 0;
 }
 
-.about p[data-scroll="in"] {
+/*.about p[data-scroll="in"] {
     opacity: 1;
     transition-delay: 1s;
-}
+}*/
 
 /*.about .rrss {
 width: 100%;
@@ -447,14 +441,12 @@ align-items: center;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    transition: 1s;
-    opacity: 0;
 }
 
-.about ul[data-scroll="in"] {
+/*.about ul[data-scroll="in"] {
     opacity: 1;
     transition-delay: 1s;
-}
+}*/
 
 
 .about .li {
@@ -470,12 +462,9 @@ align-items: center;
 
 .contact h2 {
     margin: 0 0 2rem;
-    transition: 0.5s;
-    transform-origin: left;
-    transform: scaleX(0);
 }
 
-.contact h2[data-scroll="in"] {
+/*.contact h2[data-scroll="in"] {
     transform: scaleX(1);
 }
 
@@ -487,21 +476,19 @@ align-items: center;
 .contact h2[data-scroll="in"]:before {
     transform: scaleX(0);
     transition-delay: 0.5s;
-}
+}*/
 
 .contact p {
     max-width: 40rem;
     margin: 1rem 0 1rem;
     font-size: 1.1em;
     text-align: left;
-    transition: 1s;
-    opacity: 0;
 }
 
-.contact p[data-scroll="in"] {
+/*.contact p[data-scroll="in"] {
     opacity: 1;
     transition-delay: 1s;
-}
+}*/
 
 .contact ul {
     width: 100%;
@@ -509,14 +496,12 @@ align-items: center;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    transition: 1s;
-    opacity: 0;
 }
 
-.contact ul[data-scroll="in"] {
+/*.contact ul[data-scroll="in"] {
     opacity: 1;
     transition-delay: 1s;
-}
+}*/
 
 
 .contact .li {
@@ -532,17 +517,14 @@ align-items: center;
 .contact .a {
     font-size: 30px;
     font-weight: 700;
-    transition: 1s;
-    transform: translateX(100px);
-    opacity: 0;
     text-decoration: none;
 }
 
-.contact .a[data-scroll="in"] {
+/*.contact .a[data-scroll="in"] {
     transform: translateX(0);
     transition-delay: 1s;
     opacity: 1;
-}
+}*/
 
 /*.contact .mail{
     border-bottom: 2px solid var(--blanco-2);
